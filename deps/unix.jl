@@ -1,5 +1,5 @@
 include("helper.jl")
-
+using Libdl
 # Locate and/or download Yeppp!
 if isfile("$(pkgdir)deps/downloads/yeppp-1.0.0.tar.bz2") || (Libdl.find_library(["libyeppp"]) != "")
 else
